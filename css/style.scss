@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    border: 2px solid #000;
+    height: 50px;
+    display: flex;
+
+    .left-nav {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+    }
+
+    .right-nav {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+}
+
+main {
+    section {
+        display: flex;
+        .latest {
+            position: relative;
+            height: 400px;
+            width: 70%;
+            border: 2px solid #000;
+
+            .blog {
+                border: 2px solid #000;
+                width: 80%;
+                height: 300px;
+                position: absolute;
+                left: 67px;
+                top: 12px;
+            }
+
+            .info {
+                width: 100%;
+                height: 70px;
+                border: 2px solid #000;
+                position: absolute;
+                bottom: 0;
+                display: flex;
+
+                .personal {
+                    width: 50%;
+                    height: 100%;
+                    border: 2px solid #000;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+
+                .social-media {
+                    width: 50%;
+                    height: 100%;
+                    border: 2px solid #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+
+            }
+        }
+
+        .featured {
+            width: 30%;
+            border: 2px solid #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .blog {
+                width: 80%;
+                height: 130px;
+                border: 2px solid #000;
+            }
+        }
+    }
+}
